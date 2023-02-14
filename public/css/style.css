@@ -4,10 +4,33 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-    font-size: 12px;
+    background: #ebebeb;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100% !important;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #EAC926;
+    flex-direction: column;
+}
+
 .info {
     background-color: white;
     border-top: 1px groove #ebebeb;
@@ -17,20 +40,94 @@ body {
     padding-left: 10px;
     margin-bottom: 10px;
 }
+/************ HEADER ****************** */
 
-.lista {
-    /*display: flex;
-    width: 100%;*/
+/**LOGO BARRA LUPA PAGO TARJETA */
+.logo-container {
+    display: flex;
+    flex-direction: column;
 }
+
+/**MENU HAMBURGUEZA */
+.burger-container {
+    display: flex;
+    justify-content: center;
+}
+
+/**MENU NAVEGACION */
+.menu-container {
+    display: none;
+}
+
+.logo-bar-container {
+    display: flex;
+}
+
+.card-container {
+    padding: 15px;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.search-button-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    height: 25px;
+    width: 90%;
+}
+
+.card-title {
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-title i {
+    margin-right: 10px;
+}
+
+input {
+    width: 95%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.burger-menu {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+}
+
+/************ FIN HEADER ***************/
+
 
 article div.logoEnvio {
     width: 30px;
 }
 
 
-header {
-    background-color: #EAC926;
-}
 
 .banner img {
     width: 100%;
@@ -51,23 +148,11 @@ main {
 
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
 
 a:hover {
     cursor: pointer;
 }
 
-.sincirculo {
-    text-decoration: none;
-    /*se quita el subtitulo*/
-    padding-left: 0px;
-    /*se pasa el texto a la izquierda*/
-    font-size: 130%;
-
-}
 
 footer i.fa-solid {
     color: #1259c3;
@@ -105,18 +190,6 @@ h4 {
     font-size: 16px;
 }
 
-.burger-menu {
-    text-align: center;
-    background-color: #1259c3;
-    color: white;
-    font-size: 22px;
-    border-radius: 6px;
-    height: 25px;
-    width: 30px;
-    padding: 5px;
-    margin: auto;
-    margin-top: 22PX;
-}
 
 
 @meta (max-width: 480px) {
