@@ -18,7 +18,7 @@ ul {
 }
 
 img {
-    width: 100% !important;
+    width: 100%;
 }
 
 html {
@@ -31,30 +31,19 @@ header {
     flex-direction: column;
 }
 
-.info {
-    background-color: white;
-    border-top: 1px groove #ebebeb;
-    padding: 15px;
-    margin: 0;
-    flex-wrap: wrap;
-    padding-left: 10px;
-    margin-bottom: 10px;
-}
 /************ HEADER ****************** */
 
-/**LOGO BARRA LUPA PAGO TARJETA */
 .logo-container {
     display: flex;
     flex-direction: column;
 }
 
-/**MENU HAMBURGUEZA */
 .burger-container {
     display: flex;
     justify-content: center;
 }
 
-/**MENU NAVEGACION */
+
 .menu-container {
     display: none;
 }
@@ -122,30 +111,80 @@ button {
 
 /************ FIN HEADER ***************/
 
-
-article div.logoEnvio {
-    width: 30px;
+/******* MAIN INICIO ********/
+/*incio ultima visita*/
+main h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.lista .productos {
+    width: 95%;
+}
+.productos article {
+    background: white;
+    padding: 10px 0;
+}
+/*logo camion*/
+main section article i {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background: white;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+}
+article i {
+    transition: transform 1s;
 }
 
-main {
-    background-color: #ebebeb;
-    width: 90%;
-    margin: 15px;
-
+article:hover i{
+    transform: rotate(-90deg);
 }
 
-.imgP {
-    width: 100%;
-    font-size: 0%;
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #ebebeb;
+}
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+.descuentos {
+    width: 70%;
+    color: #39b54a;
+}
 
+.descuentos, .info h4 {
+ font-size: 18px; 
+ font-weight: normal;  
+}
+
+h3, .info h4 {
+    color: #666;
+}
+main section article {
+    margin-bottom: 15px;
+}
+/* fin ultima visita */
+/* inico ofertas */
+
+.lista, .ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ofertas .productos {
+    width: 95%;
 }
 
 
@@ -154,52 +193,47 @@ a:hover {
 }
 
 
-footer i.fa-solid {
-    color: #1259c3;
-    margin-bottom: 10px;
-    font-size: 2em
+footer section {
+    color: #666;
+    padding: 15px;
 }
+footer section i {
+    font-size: 2em;
+    color: #1259c3;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+footer .iconos-footer:hover {
+    color: #EAC926;
+    transition: all 0.4s ease-in;
+}
+footer .iconos-footer:hover i {
+    transform: rotateY(180deg);
+    transition: all 0.4s ease-in;
+}
+footer .iconos-footer:not(:hover) i {
+    transform: rotateY(0deg);
+    transition: all 0.4s ease-in;
+}
+
 
 footer {
-    background-color: #ebebeb;
-    color: #666;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    border: 0px dotted #000;
-    padding: 10px;
-    /*se centra un titulo*/
-
+    margin-top: 20px;
+}
+footer h3, p {
+    margin: 0;
+    padding: 0;
 }
 
-.cuerpos-de-texto {
+footer .pie-footer {
+    text-align-last: left;
+    margin-top: 10px;
+}
+
+footer .Copyright {
     font-size: 12px;
 }
 
-.precios {
-    font-size: 18px;
-}
-
-.descuentos {
-    font-size: 16px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 16px;
-}
-
-
-
-@meta (max-width: 480px) {
-    body:
-
-}
-
-/*main section div article:hover .main-article h4 {
-    position: relative;
-    bottom: 0;
-    z-index: 1;
-    opacity: 1;
-}*/
