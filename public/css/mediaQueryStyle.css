@@ -36,9 +36,7 @@
         width: 45%;
         justify-content: space-between;
     }
-
-    /* lista productos*/
-
+    
     .lista,
     .ofertas {
         height: 860px;
@@ -122,9 +120,7 @@
     main section div article:hover {
         height: 24em;
     }
-    footer div {
-        display: flex;
-    }
+    
 }
 
 }
