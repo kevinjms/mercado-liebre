@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/login.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
+
 
     <link href="/css/mediaQueryStyle.css" rel="stylesheet">
 
@@ -58,10 +59,99 @@
             </div>
         </div>
     </header>
-    <div class="banner">
-        <img src="images/img-home-banner.jpg" alt="imagen de banner">
-    </div>
-    
+    <section class="banner">
+        <img src="images/img-home-banner.jpg" alt="banner de oferta">
+    </section>
+    <main>
+        <div class="caja-principal">
+            <p>Registrarse</p>
+            <form action="/registro" method="POST">
+                <div class="caja-especifica">
+                    <div>
+                        <div class="grupodecajas">
+                            <label for="username">Usuario</label>
+                            <input type="text" name="username" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="grupodecajas">
+                                <label for="password">Contraseña</label>
+                                <input type="password" name="password" required>
+                            </div>
+                            <div class="grupodecajas">
+                                <label for="lastname">Nombre y Apellido</label>
+                                <input type="text" name="lastname" required>
+
+                            </div>
+                            <div class="grupodecajas">
+                                <label for="date">Fecha de nacimiennto</label>
+                                <input type="date" name="date" required>
+
+                            </div>
+                            <div class="grupodecajas">
+                                <label for="adress">Domicilio</label>
+                                <input type="text" name="adress" required>
+                            </div>
+                            <div class="grupodecajas perfil">
+                                <div class="label-grupo">
+                                    <label for="perfil">Perfil</label>
+                                </div>
+                                <div class="caja-perfil">
+                                    <input type="radio" id="comprador" name="perfil" value="comprador" checked>
+                                    <label for="comprador">Comprador</label>
+                                    <input type="radio" id="vendedor" name="perfil" value="vendedor">
+                                    <label for="vendedor">Vendedor</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="label-group">
+                                <div class="grupodecajas">
+                                    <label for="password2">Repetir contraseña</label>
+                                    <input type="password" name="password2" id="password2"
+                                        placeholder=" Repita contraseña" minlength="5" required>
+                                </div>
+                                <div class="grupodecajas">
+                                    <div>
+                                        <label for="categories">Categorías de interés</label>
+                                    </div>
+                                    <div class="grupo-categorias">
+                                        <div class="categorias">
+                                            <input type="checkbox" name="categorias"
+                                                value="electro"><label>Electro</label>
+                                        </div>
+                                        <div class="categorias">
+                                            <input type="checkbox" name="categorias" value="Moda"><label>Moda</label>
+                                        </div>
+                                        <div class="categorias">
+                                            <input type="checkbox" name="categorias" value="Hogar"><label>Hogar</label>
+                                        </div>
+                                        <div class="categorias">
+                                            <input type="checkbox" name="categorias"
+                                                value="Jugueteria"><label>Jugueteria</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="categorias"
+                                                value="Vida sana"><label>Vida_sana</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grupodecajas">
+                                    <label for="fotouser">Foto usuario</label>
+                                    <input type="file" name="fotouser">
+                                </div>
+                                <div class="caja-botones">
+                                    <div class="caja-enviar">
+                                        <button type="submit">Enviar</button>
+                                    </div>
+                                    <div class="caja-limpiar">
+                                        <button type="reset">Limpiar</button>
+                                    </div>
+                                </div>
+                            </div>
+            </form>
+    </main>
     <footer>
         <div>
             <section>
